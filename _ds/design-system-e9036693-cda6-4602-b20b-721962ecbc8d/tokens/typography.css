@@ -1,0 +1,62 @@
+/* ============================================================
+   ARTTA — Typography tokens
+   DM Sans  → titles & display. Presence without excess weight.
+   Inter    → everything else. Legible at any size, any context.
+   Letter spacing -5% and line-height 85% on display/headings.
+   ============================================================ */
+
+:root {
+  /* Families */
+  --font-display: "DM Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-body:    "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+
+  /* Weights */
+  --fw-regular:  400;
+  --fw-medium:   500;
+  --fw-semibold: 600;
+  --fw-bold:     700;
+
+  /* ── Display scale — DM Sans, lh .9, ls -.05em ── */
+  --type-display-1: 96px;
+  --type-display-2: 64px;
+  --type-display-3: 48px;
+  --type-display-4: 40px;
+
+  /* ── Heading scale — Inter SemiBold, lh .85, ls -.05em ── */
+  --type-h1: 53px;
+  --type-h2: 44px;
+  --type-h3: 30px;
+  --type-h4: 26px;
+  --type-h5: 20px;
+
+  /* ── Body scale — Inter, lh 1.0–1.5 ── */
+  --type-body-1: 20px;
+  --type-body-2: 16px;
+  --type-body-3: 14px;
+  --type-caption: 12px;
+
+  /* Shared metrics */
+  --ls-tight:  -0.05em;
+  --ls-normal: 0;
+  --lh-display: 0.9;
+  --lh-heading: 0.85;
+  --lh-body:    1.5;
+  --lh-flat:    1.0;
+}
+
+/* ── Type helper classes ── */
+.artta-display-1 { font-family: var(--font-display); font-weight: var(--fw-regular); font-size: var(--type-display-1); line-height: var(--lh-display); letter-spacing: var(--ls-tight); color: var(--text-primary); }
+.artta-display-2 { font-family: var(--font-display); font-weight: var(--fw-regular); font-size: var(--type-display-2); line-height: var(--lh-display); letter-spacing: var(--ls-tight); color: var(--text-primary); }
+.artta-display-3 { font-family: var(--font-display); font-weight: var(--fw-medium);  font-size: var(--type-display-3); line-height: var(--lh-display); letter-spacing: var(--ls-tight); color: var(--text-primary); }
+.artta-display-4 { font-family: var(--font-display); font-weight: var(--fw-medium);  font-size: var(--type-display-4); line-height: var(--lh-display); letter-spacing: var(--ls-tight); color: var(--text-primary); }
+
+.artta-h1 { font-family: var(--font-body); font-weight: var(--fw-semibold); font-size: var(--type-h1); line-height: var(--lh-heading); letter-spacing: var(--ls-tight); color: var(--text-primary); }
+.artta-h2 { font-family: var(--font-body); font-weight: var(--fw-semibold); font-size: var(--type-h2); line-height: var(--lh-heading); letter-spacing: var(--ls-tight); color: var(--text-primary); }
+.artta-h3 { font-family: var(--font-body); font-weight: var(--fw-semibold); font-size: var(--type-h3); line-height: var(--lh-heading); letter-spacing: var(--ls-tight); color: var(--text-primary); }
+.artta-h4 { font-family: var(--font-body); font-weight: var(--fw-semibold); font-size: var(--type-h4); line-height: var(--lh-heading); letter-spacing: var(--ls-tight); color: var(--text-primary); }
+.artta-h5 { font-family: var(--font-body); font-weight: var(--fw-semibold); font-size: var(--type-h5); line-height: var(--lh-flat); color: var(--text-primary); }
+
+.artta-body-1 { font-family: var(--font-body); font-weight: var(--fw-regular); font-size: var(--type-body-1); line-height: var(--lh-body); color: var(--text-primary); }
+.artta-body-2 { font-family: var(--font-body); font-weight: var(--fw-regular); font-size: var(--type-body-2); line-height: var(--lh-body); color: var(--text-primary); }
+.artta-body-3 { font-family: var(--font-body); font-weight: var(--fw-regular); font-size: var(--type-body-3); line-height: var(--lh-body); color: var(--text-secondary); }
+.artta-caption { font-family: var(--font-body); font-weight: var(--fw-regular); font-size: var(--type-caption); line-height: 1.68; color: var(--text-muted); }

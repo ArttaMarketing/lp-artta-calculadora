@@ -1,0 +1,76 @@
+/* ============================================================
+   ARTTA — Color tokens
+   "Para quem olha de fora, a Artta é azul. Para quem trabalha
+    com ela, é navy, azul elétrico, cinza claro e âmbar."
+   Each color has a defined role. None is decorative.
+   ============================================================ */
+
+:root {
+  /* — Primary palette (from the brand guideline) — */
+  --artta-navy:        #0A0B35;  /* rgb(10,11,53)   — base, depth, authority */
+  --artta-blue:        #268AFB;  /* rgb(38,138,251) — the Artta blue. Action, identity */
+  --artta-gray:        #F3F3F3;  /* rgb(243,243,243) — light surface */
+  --artta-amber:       #FFB000;  /* rgb(255,176,0)  — accent. Hover, motion, sparingly */
+
+  /* — Ink / near-black text — */
+  --artta-ink:         #0B0B1C;  /* rgb(11,11,28)   — primary text on light */
+
+  /* — Blue ramp (derived, for states & gradients) — */
+  --artta-blue-700:    #00428C;  /* rgb(0,66,140)   — pressed / deep blue */
+  --artta-blue-800:    #004492;  /* rgb(0,68,146)   — gradient end */
+  --artta-blue-600:    #1376E8;  /* hover-dark of the primary blue */
+  --artta-blue-100:    #EAEEFA;  /* rgb(234,238,250)— tint surface */
+  --artta-blue-200:    #BDC0D3;  /* rgb(189,192,211) */
+
+  /* — Navy ramp — */
+  --artta-navy-900:    #05062D;  /* rgb(5,6,45)     — deepest, gradient core */
+  --artta-navy-800:    #080932;  /* rgb(8,9,50) */
+
+  /* — Slate / neutral grays (UI text, borders, captions) — */
+  --artta-slate-500:   #6E7384;  /* rgb(110,115,132) — secondary text */
+  --artta-slate-400:   #7F879F;  /* rgb(127,135,159) — muted / page numbers */
+  --artta-slate-300:   #8C8C9F;  /* rgb(140,140,159) — disabled-ish */
+  --artta-slate-200:   #A3ABC4;  /* rgb(163,171,196) — faint label */
+  --artta-line:        #DCDCE0;  /* rgb(220,220,224) — hairline rule */
+  --artta-border:      #CCCCCC;  /* rgb(204,204,204) — input border */
+  --artta-white:       #FFFFFF;
+
+  /* — Semantic (functional) — */
+  --artta-success:     #16E72E;  /* rgb(22,231,46) */
+  --artta-danger:      #FF0004;  /* rgb(255,0,4) */
+
+  /* ── Semantic aliases — use these in product UI ── */
+  --color-bg:              var(--artta-gray);
+  --color-surface:         var(--artta-white);
+  --color-surface-sunken:  var(--artta-gray);
+  --color-surface-navy:    var(--artta-navy);
+  --color-surface-tint:    var(--artta-blue-100);
+
+  --text-primary:    var(--artta-ink);
+  --text-secondary:  var(--artta-slate-500);
+  --text-muted:      var(--artta-slate-400);
+  --text-on-navy:    var(--artta-white);
+  --text-on-blue:    var(--artta-white);
+
+  --color-action:          var(--artta-blue);
+  --color-action-hover:    var(--artta-blue-600);
+  --color-action-press:    var(--artta-blue-700);
+  --color-accent:          var(--artta-amber);
+  --color-focus-ring:      var(--artta-blue);
+
+  --border-subtle:   var(--artta-line);
+  --border-default:  var(--artta-border);
+  --border-strong:   var(--artta-navy);
+
+  /* ── Brand gradients ── */
+  /* Azul Linear — backgrounds & title highlights */
+  --gradient-azul-linear: linear-gradient(224.46deg, #268AFB 12.08%, #004492 86.39%);
+  /* Azul + Navy Radial — backgrounds only */
+  --gradient-azul-navy-radial: radial-gradient(645px 327px at 0% 100%, #268AFB 0%, #05062D 50%, #0A0B35 100%);
+  /* Navy Linear — backgrounds only */
+  --gradient-navy-linear: linear-gradient(180deg, #0A0B35 0%, #05062D 100%);
+  /* Artta Energy — blue→amber. Lines & strokes ONLY, never fills or text */
+  --gradient-artta-energy: linear-gradient(90deg, #268AFB 0%, #FFB000 100%);
+  /* Cinza Radial — subtle light background */
+  --gradient-cinza-radial: radial-gradient(circle at 30% 20%, #FFFFFF 0%, #F3F3F3 70%);
+}
